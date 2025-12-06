@@ -1,61 +1,359 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# 🎓 College Event Management System
 
-## About Laravel
+<div align="center">
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+**A comprehensive web-based Event Management System designed for colleges to streamline event registration, coordination, analytics, and Student of the Year (SOTY) applications.**
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+</div>
 
-## Learning Laravel
+----------
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## 🎯 About
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+**College Event Management System** is a powerful event management platform that enables colleges to efficiently manage their events, track student participation, and analyze engagement through interactive dashboards and analytics. The system features multi-role access control, CSV data imports, automated email notifications, and comprehensive reporting capabilities.
 
-## Laravel Sponsors
+### Key Highlights
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+-   🔐 Multi-role authentication (Admin, Coordinator, Student, Guest)
+-   📊 Real-time analytics with interactive graphs
+-   📧 Automated email notifications with password delivery
+-   📁 CSV bulk import for students and events
+-   🎓 Student of the Year (SOTY) application module
+-   📱 Responsive design for all devices
+-   📈 Event-wise registration tracking and analysis
 
-### Premium Partners
+----------
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+## ✨ Features
 
-## Contributing
+### For Administrators
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+-   **Complete System Control**: Manage users, coordinators, students, and events
+-   **CSV Import**: Bulk import students and events data
+-   **Analytics Dashboard**: View registration trends, event participation, and SOTY applications
+-   **Interactive Graphs**: Analyze student registrations with bar charts, line graphs, and pie charts
+-   **Registration Management**: Control registration opening/closing dates and participation limits
+-   **User Management**: Create and manage coordinators and admins
 
-## Code of Conduct
+### For Coordinators
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+-   **Event Management**: Manage assigned events and view participant lists
+-   **Email Communication**: Send announcements to all registered students
+-   **Registration Tracking**: Monitor real-time registration counts
+-   **Participant Details**: Access enrollment numbers, names, and contact information
 
-## Security Vulnerabilities
+### For Students
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+-   **Easy Registration**: Login with enrollment number only
+-   **Auto-filled Details**: System automatically fetches student information (Name, Class, Branch, Email, Year)
+-   **Event Browsing**: View all available events categorized as Indoor, Outdoor, and Cultural
+-   **SOTY Application**: Apply for Student of the Year with auto-populated CGPA and records
+-   **Email Password Delivery**: Receive password via email upon account creation automatically
 
-## License
+### Event Categories
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+-   🎯 **Indoor Events**: Quizzes, debates, workshops
+-   🏏 **Outdoor Events**: Sports, marathons, outdoor activities
+-   🎭 **Cultural Events**: Dance, music, drama performances
+
+----------
+
+## 👥 User Roles
+
+Role
+
+Permissions
+
+**Admin**
+
+Full system access, user management, analytics, CSV imports, event control
+
+**Coordinator**
+
+Manage assigned events, view participants, send emails
+
+**Student**
+
+Register for events, apply for SOTY, view personal dashboard
+
+**Guest**
+
+Limited access, view public pages and event listings
+
+----------
+
+## 🛠 Tech Stack
+
+-   **Backend**: Laravel (PHP Framework)
+-   **Frontend**: Blade Templates, Tailwind CSS, JavaScript
+-   **Database**: MySQL
+-   **Charts**: Chart.js for interactive graphs
+-   **Animations**: GSAP (GreenSock Animation Platform) with ScrollTrigger
+-   **Email**: PHPMailer / SMTP
+-   **Version Control**: Git
+
+----------
+
+## 📥 Installation
+
+### Prerequisites
+
+Ensure you have the following installed on your system:
+
+-   PHP >= 8.1
+-   Composer
+-   MySQL >= 5.7
+-   Node.js & NPM
+-   Git
+
+### Step-by-Step Installation
+
+1.  **Clone the Repository**
+    
+    ```bash
+    git clone https://github.com/Nisarg-Vekariya/College-Event-Management-System.git
+    cd College-Event-Management-System
+    
+    ```
+    
+2.  **Install PHP Dependencies**
+    
+    ```bash
+    composer install
+    
+    ```
+    
+3.  **Install NPM Dependencies**
+    
+    ```bash
+    npm install
+    
+    ```
+    
+4.  **Create Environment File**
+    
+    ```bash
+    cp .env.example .env
+    
+    ```
+    
+5.  **Generate Application Key**
+    
+    ```bash
+    php artisan key:generate
+    
+    ```
+    
+6.  **Configure Database**
+    
+    Open `.env` file and update the following:
+    
+    ```env
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=your_database_name
+    DB_USERNAME=your_database_user
+    DB_PASSWORD=your_database_password
+    
+    ```
+    
+7.  **Import Database**
+    
+    Import the provided SQL file to set up the complete database with tables, sample data, and configurations:
+    
+    ```bash
+    mysql -u your_username -p your_database_name < cemsys.sql
+    
+    ```
+    
+    Or use phpMyAdmin:
+    
+    -   Open phpMyAdmin
+    -   Select your database
+    -   Click on "Import" tab
+    -   Choose `cemsys.sql` file
+    -   Click "Go"
+    
+    ```bash
+    npm run build
+    
+    ```
+    
+    For development:
+    
+    ```bash
+    npm run dev
+    
+    ```
+    
+8.  **Create Storage Link**
+    
+    ```bash
+    php artisan storage:link
+    
+    ```
+    
+9.  **Start the Development Server**
+    
+    ```bash
+    php artisan serve
+    
+    ```
+    
+10.  **Access the Application**
+    
+    Open your browser and navigate to: `http://localhost:8000`
+    
+
+----------
+
+## ⚙️ Configuration
+
+### Email Setup (Important!)
+
+To enable email functionality for **automatic password delivery** to students and coordinator notifications, configure SMTP settings in your `.env` file:
+
+```env
+MAIL_MAILER=smtp
+MAIL_HOST=smtp.gmail.com
+MAIL_PORT=587
+MAIL_USERNAME=your-email@gmail.com
+MAIL_PASSWORD=your-app-password
+MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS=your-email@gmail.com
+MAIL_FROM_NAME="${APP_NAME}"
+
+```
+
+#### Gmail App Password Setup
+
+1.  Go to your Google Account settings
+2.  Enable 2-Factor Authentication
+3.  Navigate to **Security** > **2-Step Verification** > **App passwords**
+4.  Generate a new app password for "Mail"
+5.  Use this 16-character password in `MAIL_PASSWORD`
+
+> **⚠️ Important**: When a student creates an account, their password will be **automatically emailed** to them. Ensure email configuration is complete before allowing student registrations.
+
+### File Upload Configuration
+
+Ensure the storage directory is writable:
+
+```bash
+chmod -R 775 storage
+chmod -R 775 bootstrap/cache
+
+```
+
+----------
+
+## 🔑 Demo Credentials
+
+Use these credentials to test different user roles:
+
+### 👨‍🎓 Student Account
+
+-   **Email**: `team.818x+student@gmail.com`
+-   **Password**: `ZEBhCaXi`
+
+### 👨‍🏫 Coordinator Account
+
+-   **Email**: `team.818x+co@gmail.com`
+-   **Password**: `team.818`
+
+### 👨‍💼 Admin Account
+
+-   **Email**: `team.818x+admin@gmail.com`
+-   **Password**: `team.818`
+
+----------
+
+## 📸 Screenshots
+
+View application screenshots in the **[sample images](https://github.com/Nisarg-Vekariya/College-Event-Management-System/tree/main/sample%20images)** folder. Screenshots showcase:
+
+-   Admin Dashboard with Analytics
+-   Event Management Interface
+-   Student Registration Flow
+-   Coordinator Panel
+
+----------
+
+## 📚 Documentation
+
+### Analytics & Graphs
+
+The system provides comprehensive analytics through interactive graphs to analyze student registrations:
+
+-   **Event-wise Registration Comparison**: Bar charts showing registrations per event
+-   **Daily/Hourly Patterns**: Line charts tracking registration trends
+-   **Category Analysis**: Compare participation across Indoor, Outdoor, and Cultural events
+-   **SOTY Applications**: Track Student of the Year application trends
+
+These visualizations help administrators make data-driven decisions and understand student engagement patterns.
+
+### Database Schema
+
+The application includes a pre-configured SQL file (`cemsys.sql`) that contains:
+
+-   All necessary tables with proper relationships
+-   Sample data for testing
+-   User roles and permissions
+-   Initial system configuration
+-   Demo user accounts
+
+## ⚠️ Disclaimer
+
+This project uses images without specific copyright licensing. Please replace all images with properly licensed alternatives before commercial use.
+
+----------
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/Nisarg-Vekariya/College-Event-Management-System/blob/main/LICENSE) file for details.
+
+----------
+
+## 👨‍💻 Team 818
+
+**Developed with ❤️ by Team 818**
+
+### Contact
+
+-   **Email**: team.818x@gmail.com
+-   **GitHub**: [@Nisarg-Vekariya](https://github.com/Nisarg-Vekariya)
+
+----------
+
+## 📞 Support
+
+For any queries or support, please contact: **team.818x@gmail.com**
+
+If you encounter any issues:
+
+-   Check existing documentation
+-   Review the [sample images](https://github.com/Nisarg-Vekariya/College-Event-Management-System/tree/main/sample%20images) for visual guidance
+
+----------
+
+## 🙏 Acknowledgments
+
+-   Laravel Framework
+-   Tailwind CSS
+-   Chart.js for analytics
+-   GSAP for smooth animations
+-   All contributors and testers
+
+----------
+
+<div align="center">
+
+**⭐ Star this repository if you find it helpful!**
+
+Made with ❤️ for educational institutions
+
+</div>
