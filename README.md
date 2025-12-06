@@ -47,7 +47,7 @@
 
 ### For Students
 
--   **Easy Registration**: Login with enrollment number only
+-   **Easy Registration**: Register with enrollment number only
 -   **Auto-filled Details**: System automatically fetches student information (Name, Class, Branch, Email, Year)
 -   **Event Browsing**: View all available events categorized as Indoor, Outdoor, and Cultural
 -   **SOTY Application**: Apply for Student of the Year with auto-populated CGPA and records
@@ -340,20 +340,9 @@ If you encounter any issues:
 
 ----------
 
-## 🙏 Acknowledgments
-
--   Laravel Framework
--   Tailwind CSS
--   Chart.js for analytics
--   GSAP for smooth animations
--   All contributors and testers
-
-----------
 
 <div align="center">
 
 **⭐ Star this repository if you find it helpful!**
-
-Made with ❤️ for educational institutions
 
 </div>
