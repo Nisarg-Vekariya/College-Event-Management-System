@@ -63,10 +63,6 @@
 
 ## 👥 User Roles
 
-Role
-
-Permissions
-
 **Admin**
 
 Full system access, user management, analytics, CSV imports, event control
